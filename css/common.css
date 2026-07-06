@@ -18,7 +18,7 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
     color: #000000;
     line-height: 1;
@@ -45,10 +45,7 @@ img {
     display: none;
 }
 
-.header-logo {
-    display: block;
-    width: 170px;
-}
+
 
 .site-menu ul {
     display: flex;
@@ -140,7 +137,7 @@ img {
 
 .footer {
     color: #ffffff;
-    background-color: #24211b;
+    background-color: #e60033;
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
@@ -148,11 +145,6 @@ img {
     align-items: center;
 }
 
-.footer-logo {
-    display: block;
-    width: 235px;
-    margin-top: 90px;
-}
 
 .copyright {
     font-size: 14pt;
