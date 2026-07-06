@@ -45,7 +45,10 @@ img {
     display: none;
 }
 
-
+.header-logo {
+    display: block;
+    width: 170px;
+}
 
 .site-menu ul {
     display: flex;
@@ -145,6 +148,11 @@ img {
     align-items: center;
 }
 
+.footer-logo {
+    display: block;
+    width: 235px;
+    margin-top: 90px;
+}
 
 .copyright {
     font-size: 14pt;
