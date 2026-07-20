@@ -24,19 +24,21 @@
 }
 
 .member-list {
-    display: flex;
-    flex-wrap: wrap;
+    /* Use grid so items align uniformly in rows (avoids masonry gaps)
+       and keeps consistent spacing between rows/columns */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 10px;
-    overflow: visible;
     gap: 40px 75px;
 }
 
 .member-list li {
-    flex-shrink: 0;
     width: 260px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .member-list li:last-child {
@@ -73,5 +75,13 @@
     .member-list li {
         width: 100%;
         margin-left: 0;
+    }
+    /* On small screens, let images scale naturally to width to avoid
+       awkward cropping/zooming — use auto height so full image is visible. */
+    .member-list li img {
+        width: 100%;
+        height: auto;
+        object-fit: unset;
+        display: block;
     }
 }
